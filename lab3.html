@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мої одногрупники</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        .bio {
+            display: none;
+        }
+    </style>
+    <script>
+        function showBio(id) {
+            document.querySelectorAll('.bio').forEach(el => el.style.display = 'none');
+            document.getElementById(id).style.display = 'table-row';
+        }
+    </script>
+</head>
+<body>
+    <a href="index.html" style="display: block; text-align: right">На головну дисципліни</a>
+    <table>
+        <tr>
+            <th><img src="сat.gif" alt="Анімація" width="50"></th>
+            <th colspan="4"><b>Мої одногрупники</b></th>
+        </tr>
+        <tr>
+            <td><img src="1.jpg" width="150" height="112" onclick="showBio('bio1')"><br>Дубецький О.Р.</td>
+            <td><img src="1.jpg" width="150" height="112" onclick="showBio('bio2')"><br>Івасюк Д.І</td>
+            <td><img src="1.jpg" width="150" height="112" onclick="showBio('bio3')"><br>Залєвський Р.В..</td>
+            <td><img src="1.jpg" width="150" height="112" onclick="showBio('bio4')"><br>Жураківський О.Д.</td>
+        </tr>
+        <tr id="bio1" class="bio">
+            <td colspan="4">Дубецький О.Р., 25.02.2007,  oleksandr.dubetskyi.24@pnu.edu.ua, улюблена пісня: IVOXYGEN - Read My Mind</td>
+        </tr>
+        <tr id="bio2" class="bio">
+            <td colspan="4">Івасюк Д.І.,11.07.2007,  dmytro.ivasiuk.24@pnu.edu.ua, улюблена пісня: Clams Casino - I'm God - Extended and Looped</td>
+        </tr>
+        <tr id="bio3" class="bio">
+            <td colspan="4">Залєвський Р.В., 19.04.2007, ruslan.zalievskyi.24@pnu.edu.ua, улюблена пісня: Miguel Angeles - "PROTECTION CHARM"</td>
+        </tr>
+        <tr id="bio4" class="bio">
+            <td colspan="4">Жураківський О.Д.,12.04.2007, oleksandr.zhurakivskyi.24@pnu.edu.ua, улюблена пісня: Jfarrari - The Unknowing </td>
+        </tr>
+    </table>
+</table>
+<p>IVOXYGEN - Read My Mind</p>
+<audio controls>
+    <source src="song1.mp3" type="audio/mpeg">
+</audio>
+<p>Відео:</p>
+<video controls width="320" height="240">
+    <source src="video.mp4" type="video/mp4">
+</video>
+</body>
+</html>
