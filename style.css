@@ -101,7 +101,7 @@ h2 {
     padding: 10px;
 }
 
-/* Таблиця 2 */
+
 .table2 {
     border-collapse: separate;
     border-spacing: 20px;
@@ -115,7 +115,7 @@ h2 {
     padding: 10px;
 }
 
-/* Таблиця 3 */
+
 .table3 {
     border-collapse: separate;
     border-spacing: 20px;
@@ -129,7 +129,7 @@ h2 {
     text-align: center;
 }
 
-/* Таблиця 4 */
+
 .table4 {
     border-spacing: 0;
     border: 2px solid blue;
@@ -142,7 +142,7 @@ h2 {
     text-align: center;
 }
 
-/* Таблиця 5 */
+
 .table5 {
     width: 100%;
     border: 2px solid red;
@@ -165,7 +165,7 @@ h2 {
     background-color: rgb(0, 105, 0);
 }
 
-/* Таблиця 6 */
+
 .table6 {
     border-spacing: 1px;
     border: 1px solid black;
@@ -178,7 +178,7 @@ h2 {
     padding: 10px;
 }
 
-/* Таблиця 7 */
+
 .table7 {
     margin: 0 auto;
     border-spacing: 0;
@@ -203,7 +203,7 @@ h2 {
     background-color: rgb(255, 0, 43);
 }
 
-/* Таблиця 8 */
+
 .table8 {
     margin: 0 auto;
     border: 2px solid rgb(255, 6, 130);
@@ -214,7 +214,7 @@ h2 {
     text-align: center;
 }
 
-/* Таблиці 8.1 і 8.2 */
+
 .table8_1 {
     border-spacing: 0;
     border: 1px solid pink;
@@ -231,4 +231,28 @@ h2 {
 
 .table8_2 td {
     border: 1px solid rgb(175, 119, 231);
+}
+   .paragraph {
+    width: 60%;
+    padding: 15px;
+    border: 2px solid;
+    margin-bottom: 10px;
+}
+.p1 {
+    margin-left: 60px;
+    background-color: #ffcccc;
+    color: #660000;
+    border-color: #cc0000;
+}
+.p2 {
+    margin-left: 120px;
+    background-color: #ccffcc;
+    color: #006600;
+    border-color: #009900;
+}
+.p3 {
+    margin-left: 180px;
+    background-color: #ccccff;
+    color: #000066;
+    border-color: #000099;
 }
