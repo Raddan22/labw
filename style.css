@@ -256,3 +256,58 @@ h2 {
     color: #000066;
     border-color: #000099;
 }
+.body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  
+  h1 {
+    color: #333;
+    text-align: center;
+  }
+  
+ 
+  ul {
+    list-style-type: square;
+    padding-left: 20px;
+  }
+  
+ 
+  a {
+    text-decoration: none;
+    color: blue;
+    transition: color 0.3s ease;
+  }
+  
+  a:hover {
+    color: red;
+  }
+  
+
+  p:nth-of-type(1) + ul a {
+    font-weight: bold;
+    color: darkblue;
+  }
+  
+  
+  p:nth-of-type(2) + ul a {
+    font-style: italic;
+    color: darkgreen;
+  }
+  
+
+  p:nth-of-type(3) + ul a {
+    text-decoration: underline;
+    color: darkred;
+  }
+  
+ 
+  a[href="index.html"] {
+    font-size: 18px;
+    font-weight: bold;
+    color: purple;
+  }
+  
