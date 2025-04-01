@@ -74,7 +74,19 @@
         position: static;
         width: 90%;
     }
+    .block1 {
+        height: auto;
+    }
+    .block2 {
+        height: auto;
+    }
+    .block3 {
+        height: auto;
+    }
     .block4 {
+        height: auto;
+    }
+    .block5 {
         height: auto;
     }
 }
