@@ -1,0 +1,97 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    width: 300px;
+    height: 350px;
+    border: 2px solid black;
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.block {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    padding: 5px;
+    position: absolute;
+}
+
+.block1 {
+    width: 80%;
+    height: 50px;
+    background-color: blue;
+    left: 10%;
+    top: 0;
+}
+
+.block2 {
+    width: 20%;
+    height: 70%;
+    background-color: gold;
+    top: 50px;
+    left: 0;
+}
+
+.block3 {
+    width: 80%;
+    height: 50px;
+    background-color: blue;
+    left: 10%;
+    bottom: 0;
+}
+
+.block4 {
+    width: 80%;
+    height: 70%;
+    background-color: white;
+    top: 50px;
+    left: 20%;
+    overflow: auto;
+    border: 1px solid black;
+    padding: 5px;
+    color: black;
+}
+
+.block5 {
+    width: 60%;
+    height: 50px;
+    background-color: gold;
+    top: 50px;
+    left: 20%;
+    transform: rotate(110deg);
+    transform-origin: center;
+}
+
+
+.title-block {
+    background-color: white;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    border-radius: 5px;
+    width: calc(100px + 15vw);
+    text-align: center;
+    max-height: 100%;
+}
+
+.title-block::after {
+    content: attr(data-text);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+@font-face {
+    font-family: 'MyWebFont';
+    src: url('myfont.woff2') format('woff2'),
+         url('myfont.woff') format('woff'),
+         url('myfont.ttf') format('truetype');
+  }
+  
