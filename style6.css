@@ -136,11 +136,11 @@ nav a:hover {
     color: orange;
 }
 
-/* Плавна зміна масштабу картинок фруктів */
 .fruit img {
     width: 100px;
     height: auto;
     transition: transform 0.5s ease-in-out, box-shadow 0.3s ease;
+
 }
 
 .fruit img:hover {
@@ -148,7 +148,7 @@ nav a:hover {
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Плавний перехід для контактної інформації */
+
 .contacts p {
     transition: color 0.4s ease-in-out, transform 0.3s ease;
 }
@@ -157,7 +157,7 @@ nav a:hover {
     color: green;
     transform: scale(1.1);
 }
-/* Нахил заголовка h1 при наведенні */
+
 h1 {
     transition: transform 0.5s ease-in-out;
 }
@@ -170,10 +170,6 @@ h1:hover {
 
 blockquote:hover {
     transform: skew(10deg, 5deg);
-}
-/* 3D-ефект обертання зображень фруктів */
-.fruit img {
-    transition: transform 0.6s ease-in-out;
 }
 
 .fruit img:hover {
