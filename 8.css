@@ -3,12 +3,18 @@
     margin: 0;
     padding: 0;
 }
+
 .container {
+    display: grid;
+    grid-template-columns: 15% 1fr 1fr 1fr;
+    grid-template-rows: 50px 1fr 70%;
+    gap: 10px;
     width: 300px;
     height: 350px;
     border: 2px solid black;
     position: relative;
 }
+
 .block {
     display: inline-block;
     text-align: center;
@@ -17,79 +23,59 @@
     color: white;
     padding: 5px;
 }
- .block3 {
-    width: 80%;
-    height: 50px;
-    background-color: blue;
-    position: absolute;
-    left: 10%;
-}
+
 .block1 {
-    top: 0;
-    width: 80%;
-    height: 50px;
+    grid-column: 1 / span 4;
+    grid-row: 1;
     background-color: blue;
-    position: absolute;
-    left: 10%;
 }
+
 .block2 {
-    width: 20%;
-    height: 70%;
+    grid-column: 1;
+    grid-row: 2;
     background-color: gold;
-    position: absolute;
-    top: 50px;
-    left: 0;
 }
+
 .block3 {
-    bottom: 0;
+    grid-column: 2 / span 3;
+    grid-row: 3;
+    background-color: blue;
 }
+
 .block4 {
-    width: 80%;
-    height: 70%;
+    grid-column: 2 / span 3;
+    grid-row: 2;
     background-color: white;
-    position: absolute;
-    top: 50px;
-    left: 20%;
     overflow: auto;
     border: 1px solid black;
     padding: 5px;
     color: black;
 }
+
 .block5 {
-    width: 60%;
-    height: 50px;
+    grid-column: 2 / span 2;
+    grid-row: 3;
     background-color: gold;
-    position: absolute;
-    top: 50px;
-    left: 20%;
     transform: rotate(110deg);
 }
+
 @media (max-width: 600px) {
     .container {
         width: 100%;
         height: auto;
         align-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
     }
     .block {
         position: static;
         width: 90%;
     }
-    .block1 {
-        height: auto;
-    }
-    .block2 {
-        height: auto;
-    }
-    .block3 {
-        height: auto;
-    }
-    .block4 {
-        height: auto;
-    }
-    .block5 {
-        height: auto;
+    .block1, .block2, .block3, .block4, .block5 {
+        grid-column: 1;
     }
 }
+
 @media print {
     .container {
         width: 100%;
