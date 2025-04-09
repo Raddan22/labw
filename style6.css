@@ -176,5 +176,6 @@ blockquote:hover {
     transform: rotateZ(20deg);
 }
 footer:hover {
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, -0.002, 0, 10, 0, 1);
+    transform: perspective(500px) translateY(10px);
 }
+
