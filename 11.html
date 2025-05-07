@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>11laba</title>
+  <link rel="stylesheet" href="11.css">
+</head>
+<body>
+  <form>
+    <fieldset>
+      <legend>Основні поля</legend>
+      <label>name:
+        <input type="text" name="name" placeholder="Введіть ім’я" required>
+      </label><br><br>
+
+      <label>Comentar:
+        <textarea rows="4" cols="30" placeholder="Ваші враження..."></textarea>
+      </label><br><br>
+
+      <label>password:
+        <input type="password" required>
+      </label><br><br>
+
+      <label>Type:
+        <input type="email">
+      </label><br><br>
+
+      <label>Volume :
+        <input type="range" min="1" max="100" value="50">
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Вибір</legend>
+
+      <p>Оберіть стать:</p>
+      <label><input type="radio" name="gender" value="male" checked> Чоловік</label>
+      <label><input type="radio" name="gender" value="female"> Жінка</label><br><br>
+
+      <p>Хобі:</p>
+      <label><input type="checkbox" name="hobby" value="music"> Music</label>
+      <label><input type="checkbox" name="hobby" value="Dance"> Dance</label>
+      <label><input type="checkbox" name="hobby" value="Paint"> Paint</label><br><br>
+
+      <label>Місто:
+        <select name="city">
+          <optgroup label="Україна">
+            <option value="kyiv">Київ</option>
+            <option value="lviv">Львів</option>
+          </optgroup>
+          <optgroup label="Польща">
+            <option value="warsaw">Варшава</option>
+            <option value="krakow">Краків</option>
+          </optgroup>
+        </select>
+      </label><br><br>
+
+      <label>Улюблені кольори:</label><br>
+      <select multiple size="4">
+        <option value="red">Червоний</option>
+        <option value="blue">Синій</option>
+        <option value="green">Зелений</option>
+        <option value="yellow">Жовтий</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+      <legend>Кнопки</legend>
+
+      <input type="submit" value="Відправити">
+      <input type="reset" value="Очистити форму">
+      <input type="button" value="Click me!" onClick='alert("Oh, you have been clicked me!!!")'>
+    </fieldset>
+  </form>
+
+  <hr>
+
+  <p class="pseudo-demo">Це приклад з before та after.</p>
+  <p class="pseudo-letter">Перший символ цього абзацу змінено стилем.</p>
+  <p class="pseudo-line">Цей абзац демонструє стиль першого рядка тексту у блоці.</p>
+
+  <hr>
+  <a href="https://example.com">Приклад посилання</a><br><br>
+
+  <fieldset>
+    <legend>Додаткові псевдокласи (завдання 4)</legend>
+
+    <label>Кількість (in-range): <input type="number" min="1" max="10" value="5"></label><br><br>
+
+    <label>Коментар (optional): <input type="text" placeholder="Необов'язкове поле"></label><br><br>
+
+    <label>Активне поле (enabled): <input type="text" enabled></label>
+  </fieldset>
+
+</body>
+</html>
