@@ -563,11 +563,6 @@
             font-size: 16px;
         }
         
-   
-        
- 
-  
-    /* Counters */
       /* Achievements Section */
       .achievements {
       background: linear-gradient(90deg, #211b19 0%, #4e3427 100%);
@@ -780,15 +775,6 @@
             position: relative;
         }
         
-        .footer-title::after {
-            content: "";
-            position: absolute;
-            bottom: -10px;
-            left: 0;
-            width: 70px;
-            height: 2px;
-            background-color: #555;
-        }
         
         .footer-logo {
             font-size: 34px;
@@ -908,8 +894,153 @@
             transition: color 0.3s ease;
         }
         
-   
-        
         .copyright-highlight {
             color: #c7b299;
         }
+
+@media (max-width: 768px) {
+
+  body {
+    font-size: 14px;
+  }
+  
+  .container {
+    padding: 0 15px;
+  }
+  
+
+  .header-nav {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+  
+  .header-nav__logo-title {
+    margin-bottom: 15px;
+    font-size: 28px;
+  }
+  
+  .header-nav__navbar-list {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .header-nav__navbar-list__item {
+    margin: 5px 10px;
+  }
+  
+  .header-jumb__pre-title {
+    font-size: 24px;
+  }
+  
+  .header-jumb__title {
+    font-size: 32px;
+  }
+  
+  .header-jumb__desc {
+    font-size: 14px;
+  }
+  
+  .header-btn {
+    padding: 12px 25px;
+    font-size: 12px;
+  }
+  
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .service-card {
+    padding: 25px 15px;
+  }
+  
+
+  .portfolio-images {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .portfolio-img {
+    position: static;
+    transform: none;
+    width: 80%;
+    margin-bottom: 20px;
+  }
+  
+
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+  
+
+  .video-presentation {
+    height: auto;
+    min-height: 400px;
+  }
+  
+  .video-title {
+    font-size: 24px;
+  }
+  
+
+  .achievements-grid {
+    flex-direction: column;
+  }
+  
+  .achievement-item {
+    margin-bottom: 30px;
+    min-width: 100%;
+  }
+  
+  .achievement-item:not(:last-child)::after {
+    display: none;
+  }
+  
+
+  .posts-grid {
+    grid-template-columns: 1fr;
+  }
+  
+
+  .col-xs-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-bottom: 20px;
+  }
+  
+ 
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-col {
+    margin-bottom: 30px;
+  }
+  
+  .portfolio-footer .container {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .portfolio-footer-text {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+
+  .section-title {
+    font-size: 24px;
+  }
+  
+
+  .filter-buttons {
+    flex-wrap: wrap;
+  }
+  
+  .filter-btn {
+    margin: 5px;
+    padding: 6px 12px;
+  }
+}
